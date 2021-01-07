@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  div(class='menu-index')
+    h1 Witaj w grze przeglądarkowej Państwa-flagi 
+    h2=title
+    form(action="/" method='post' )
+      div.conterner
+        p.ameryka
+          label Ameryka
+            input.larger(type='checkbox' name='ameryka' )
+        p.europa
+          label Europa
+            input.larger(type='checkbox' name='europa' )
+        p.asia
+          label Asia
+            input.larger(type='checkbox' name='asia' )
+        p.afryka
+          label Afryka
+            input.larger(type='checkbox' name='afryka' )
+        p.oceania
+          label Oceania
+            input.larger(type='checkbox' name='oceania' )
+        p.all
+          label Wszystko
+           input.larger(type='checkbox' name='all'  )
+        
+        p.submit
+            input.sub(type="submit" name='dalej' value="Zapisz wybór i przejdź do gry ")

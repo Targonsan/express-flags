@@ -1,0 +1,71 @@
+extends layout
+
+block content
+  div.menu-index
+    div(class="main-container")
+      div(class="first-container")
+        
+        p(class="main-item goodAnswers" ) Poprawne odpowiedzi: 
+          span.good=good
+        p(class="main-item goodAnswers" ) Wybrano regiony: 
+          span.choosenCountries=info
+      div(class="middle-container")
+        p
+      div(class="second-container badAnswer")
+        p(class="main-item" ) Błędne odpowiedzi:  
+          span.bad=bad
+        p(class="main-item" )  Do zapamiętania:   #{sessionNames}
+        p(class="main-item " ) 
+          img(class='images' src=sessionFlag)
+
+      
+    p(class="nic" ) 
+          a.link2(href='users/reset') resetuj punktacje
+      
+    p.question Która flaga należy do panstwa: 
+              label.question-label=names
+  
+    div(class="container")
+      p(class="container-item" )
+        div(class='item')
+          p 
+          a(href='users/linik/'+myRadnomCounrtyName+'/'+tab[0]+'/'+names): img(class='images active-images'  src=flags.firstflag)
+          
+
+      p(class="container-item")
+        div(class='item')
+          p 
+          a(href='users/linik/'+myRadnomCounrtyName+'/'+tab[1]+'/'+names): img(class='images active-images' src=flags.secondflag)
+
+      p(class="container-item")
+        div(class='item')
+          p 
+          a(href='users/linik/'+myRadnomCounrtyName+'/'+tab[2]+'/'+names): img(class='images active-images' src=flags.thirdtflag)
+      
+      p(class="container-item")
+        div(class='item')
+          p 
+          a(href='users/linik/'+myRadnomCounrtyName+'/'+tab[3]+'/'+names): img(class='images active-images' src=flags.fourthflag)
+    
+  //- div(class="container-2") 
+  //-   form(action="/users/"+myRadnomCounrtyName method='post' )
+  //-     div(class="container")
+          
+  //-         p Która flaga nalzezy do panstwa: 
+  //-           label=names
+  //-         br
+  //-         input(type="radio" name='land' value='0'  )
+  //-         label 1
+  //-         br
+  //-         input(type="radio" name='land' value='1'  )
+  //-         label 2
+  //-         br
+  //-         input(type="radio" name='land' value='2'  )
+  //-         label 3
+  //-         br
+  //-         input(type="radio" name='land' value='3'  )
+  //-         label 4
+                
+  //-     p
+  //-       input(type="submit" name='title')
+

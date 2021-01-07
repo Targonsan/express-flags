@@ -1,0 +1,171 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.images{
+  width: 250px;
+  
+  border: 4px solid #ddd;
+}
+.active-images:hover{
+  /* width: 280px */
+ 
+  border: 4px solid chartreuse;
+}
+
+.container{
+  display: flex;
+  flex-direction: row ;
+  /* flex-flow: column wrap; */
+  justify-content: flex-start
+}
+.item{
+  padding: 5px;
+}
+.item p{
+  font-size: x-large;
+text-align: center;
+}
+.container-2{
+  padding: 150px;
+  font-size: x-large;
+}
+.container-item{
+  padding: 50px;
+}
+.container-item{
+  /* padding: 20px; */
+}
+.first-container{
+  display: flex;
+  flex-direction: column ;
+}
+.question{
+ margin-left: 200px;
+ color: white;
+  font-size: xx-large;
+}
+.question-label{
+  color: gold;
+  font-size: 40px;
+}
+.badAnswer{
+  padding: 10px;
+  /* border: 10px dashed red; */
+}
+.second-container{
+  margin-right: 200px;
+  display: flex;
+  flex-direction:  column ;
+}
+.main-container{
+  justify-content:space-between;
+  display: flex;
+  flex-direction: row ;
+}
+.goodAnswers{
+  padding: 10px;
+}
+.main-item{
+  font-size: 29px;
+  color: white;
+}
+
+.link2{
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  color: black;
+  border: solid black 3px;
+  background-color: silver;
+  padding: 5px;
+}
+.link2:hover{
+  border: solid gold 3px;
+}
+.good{
+  font-size: 40px;
+  color: green
+}
+.bad{
+  font-size: 40px;
+  color: red
+}
+.nic{
+  
+  position: absolute;
+  right: 30px;
+  top: 60px;;
+  margin-right: 20px;
+}
+.conterner{
+  color: white;
+  font-size: 50px;
+  display: flex;
+  flex-direction: column ;
+}
+input.larger{
+  width: 50px;
+  height: 50px;
+}
+label{
+  width: 400px;
+}
+.menu-index{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1920px;
+  height: 1000px;
+  background-image: url("/images/obr1.png")
+}
+.ameryka{
+  position: absolute;
+  top:400px;
+  left: 170px;
+}
+.europa{
+  position: absolute;
+  top:230px;
+  left: 770px;
+}
+.asia{
+  position: absolute;
+  top:230px;
+  right: 520px;
+}
+.afryka{
+  position: absolute;
+  bottom:340px;
+  right: 900px;
+}
+.oceania{
+  position: absolute;
+  bottom:160px;
+  right: 200px;
+}
+.all{
+  position: absolute;
+  bottom:130px;
+  left: 130px;
+}
+.submit{
+  position: absolute;
+  bottom:70px;
+  left: 830px;
+  
+}
+input.sub{
+  width: 300px;
+  height: 50px;
+}
+.border{
+  
+}
+.choosenCountries{
+  color:goldenrod
+}
