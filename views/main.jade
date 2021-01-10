@@ -2,27 +2,27 @@ extends layout
 
 block content
   div(class='menu-index')
-    h1 Witaj w grze przeglądarkowej Państwa-flagi 
+    h1.titles Witaj w grze przeglądarkowej Państwa-flagi 
     h2=title
     form(action="/" method='post' )
       div.conterner
-        p.ameryka
-          label Ameryka
+        p.ameryka.items
+          label Both Americas
             input.larger(type='checkbox' name='ameryka' )
-        p.europa
-          label Europa
+        p.europa.items
+          label Europe
             input.larger(type='checkbox' name='europa' )
-        p.asia
+        p.asia.items
           label Asia
             input.larger(type='checkbox' name='asia' )
-        p.afryka
-          label Afryka
+        p.afryka.items
+          label Africa
             input.larger(type='checkbox' name='afryka' )
-        p.oceania
+        p.oceania.items
           label Oceania
             input.larger(type='checkbox' name='oceania' )
-        p.all
-          label Wszystko
+        p.all.items
+          label all world
            input.larger(type='checkbox' name='all'  )
         
         p.submit

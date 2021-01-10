@@ -65,6 +65,8 @@ router.get('/linik/:pierwsze/:drugie/:name', function(req, res) {
     if(a.name===params.name){
       req.session.flag=a.flag
       req.session.names=req.params.name;
+      req.session.region=a.subregion;
+      req.session.capitol=a.capital;
     }
   })
   res.redirect('/users')
@@ -79,6 +81,8 @@ router.get('/', function(req, res) {
   req.session.bad
   req.session.flag
   req.session.names
+  req.session.region
+  req.session.capitol
   
     let countriesIndex=[]
     // console.log(req.session.countries)
@@ -142,8 +146,11 @@ router.get('/', function(req, res) {
 
   //   }
     const info=req.session.countries
+    const capitol=req.session.capitol
+    const region= req.session.region
+    console.log(capitol)
 
-    res.render('index',{title:'Dodaj zlecenie',names:choosenLand, flags,myRadnomCounrtyName, good:req.session.good, bad:req.session.bad, tab,sessionFlag:req.session.flag, sessionNames:req.session.names, info});
+    res.render('index',{title:'Dodaj zlecenie',names:choosenLand, flags,myRadnomCounrtyName, good:req.session.good, bad:req.session.bad, tab,sessionFlag:req.session.flag, sessionNames:req.session.names, info,capitol,region});
   // res.render('index',{title:'Dodaj zlecenie',errors,body,dane});
   // res.json({ user: 'kamil' });
 });

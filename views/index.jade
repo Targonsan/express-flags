@@ -1,28 +1,32 @@
 extends layout
 
 block content
-  div.menu-index
+  div.menu-index.gameBackgroud
     div(class="main-container")
       div(class="first-container")
         
-        p(class="main-item goodAnswers" ) Poprawne odpowiedzi: 
+        p(class="main-item goodAnswers" ) Good Answers: 
           span.good=good
-        p(class="main-item goodAnswers" ) Wybrano regiony: 
+        p(class="main-item goodAnswers" ) Choosen Regions: 
           span.choosenCountries=info
-      div(class="middle-container")
-        p
+          
       div(class="second-container badAnswer")
-        p(class="main-item" ) Błędne odpowiedzi:  
+        p(class="main-item" ) Bad Answers:  
           span.bad=bad
-        p(class="main-item" )  Do zapamiętania:   #{sessionNames}
+        p(class="main-item bigger" )  Remember: 
+          span.bad2= sessionNames
+        p(class="main-item " ) Subregion: 
+          span.bad2= region
+        p(class="main-item " ) Capitol: 
+          span.bad2= capitol
         p(class="main-item " ) 
           img(class='images' src=sessionFlag)
 
       
     p(class="nic" ) 
-          a.link2(href='users/reset') Wróc do menu
+          a.link2(href='users/reset') Back to menu
       
-    p.question Która flaga należy do panstwa: 
+    p.question Which flag belongs to: 
               label.question-label=names
   
     div(class="container")
