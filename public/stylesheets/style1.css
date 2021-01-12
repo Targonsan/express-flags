@@ -81,12 +81,12 @@
     font-size: 50px;
   }
   .badAnswer{
-    padding: 10px;
     /* border: 10px dashed red; */
   }
   .second-container{
     display: flex;
     flex-direction:  column ;
+    justify-content:space-between;
   }
   .main-container{
     justify-content:space-between;
